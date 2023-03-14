@@ -1,5 +1,9 @@
 import style from "./style.module.css";
 
+export const metadata = {
+  description: "Portfolio landing page.",
+};
+
 export default function Home() {
   return (
     <>

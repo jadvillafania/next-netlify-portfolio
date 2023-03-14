@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --app-black: #272932; //raisin black
+  --app-white: #e7ecef; //anti-flash white
+  --app-green: #4EC9AB; //caribbean green
+  --app-red: #f05d5e; //bittersweet
+  --app-orange: #d8a47f; //buff
+}
+
 html,
 body {
-  background-color: #272932;
+  background-color: var(--app-black);
   padding: 0;
   margin: 0;
-  color: #e7ecef;
+  color: var(--app-white);
 }
 
 #site-header {
@@ -16,26 +24,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 20;
-}
-
-#techstack {
-  > div {
-    // display: flex;
-    // gap: 6px;
-    // flex-wrap: wrap;
-    > span {
-      color: #fff;
-      padding: 2px;
-      border: 1px solid #0f7173;
-      background-color: #0f7173;
-      border-radius: 3px;
-      display: flex;
-      justify-content: center;
-      &:not(:last-child) {
-        margin-bottom: 6px;
-      }
-    }
-  }
 }
 
 .mobile-nav {
@@ -72,28 +60,4 @@ body {
   100% {
     transform: translateX(0);
   }
-}
-
-#techstack {
-  overflow: hidden;
-}
-#client {
-  transform: translateY(-100%);
-  animation: .5s ease .9s 1 forwards slideInFromTop;
-}
-#backend {
-  transform: translateY(-100%);
-  animation: .5s ease .3s 1 forwards slideInFromTop;
-}
-#data {
-  transform: translateY(-100%);
-  animation: .5s ease .6s 1 forwards slideInFromTop;
-}
-#infra {
-  transform: translateY(-100%);
-  animation: .5s ease 0s 1 forwards slideInFromTop;
-}
-#services {
-  transform: translateY(-100%);
-  animation: .5s ease 1.2s 1 forwards slideInFromTop;
 }

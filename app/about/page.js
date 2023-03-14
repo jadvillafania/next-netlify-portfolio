@@ -1,6 +1,27 @@
+import TechStack from "@components/TechStack";
 import React from "react";
 
+export const metadata = {
+  description:
+    "Page where prospective employers and/or clients go to learn about me.",
+};
+
 export default function pages() {
+  const frontend = [
+    "JavaScript",
+    "TypeScript",
+    "Vue",
+    "React",
+    "NextJS",
+    "Tailwind",
+  ];
+
+  const backend = ["PHP", "Laravel", "C#"];
+
+  const databases = ["MySQL", "MS SQL"];
+
+  const others = ["Oracle Cloud", "Docker", "Linux", "Git", "Wordpress"];
+
   return (
     <>
       <main className="relative overflow-hidden">
@@ -32,62 +53,16 @@ export default function pages() {
           </div>
           <div
             id="techstack"
-            className="flex flex-row flex-wrap gap-4 w-full md:w-3/4 "
+            className="flex flex-row overflow-hidden flex-wrap gap-4 w-full md:w-3/4"
           >
-            <div
-              id="client"
-              className="flex flex-grow flex-col border p-3 rounded border-appGreen"
-            >
-              <h3 className="font-bold text-center text-white mb-3">
-                Frontend
-              </h3>
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>Vue 3</span>
-              <span>VueJS</span>
-              <span>React</span>
-              <span>NextJS</span>
-              <span>Tailwind</span>
-            </div>
-            <div
-              id="backend"
-              className="flex flex-grow flex-col border p-3 rounded border-appGreen "
-            >
-              <h3 className="font-bold text-center text-white mb-3">Backend</h3>
-              <span>PHP</span>
-              <span>Laravel</span>
-            </div>
-            <div
-              id="data"
-              className="flex flex-grow flex-col border p-3 rounded border-appGreen "
-            >
-              <h3 className="font-bold text-center text-white mb-3">
-                Database
-              </h3>
-              <span>MySQL</span>
-              <span>MS SQL</span>
-            </div>
-            <div
-              id="infra"
-              className="flex flex-grow flex-col border p-3 rounded border-appGreen "
-            >
-              <h3 className="font-bold text-center text-white mb-3">Infra</h3>
-              <span>Oracle Cloud</span>
-              <span>Docker</span>
-              <span>Linux</span>
-            </div>
-            <div
-              id="services"
-              className="flex flex-grow flex-col border p-3 rounded border-appGreen "
-            >
-              <h3 className="font-bold text-center text-white mb-3">Others</h3>
-              <span>Git</span>
-              <span>VS Code</span>
-              <span>Vuetify</span>
-              <span>Material Design</span>
-              <span>Wordpress</span>
-              <span>Oracle APEX</span>
-            </div>
+            <TechStack label="Frontend" items={frontend} delay={1}></TechStack>
+            <TechStack label="Backend" items={backend} delay={0.6}></TechStack>
+            <TechStack
+              label="Database"
+              items={databases}
+              delay={1.2}
+            ></TechStack>
+            <TechStack label="Others" items={others} delay={0.8}></TechStack>
           </div>
         </div>
       </main>

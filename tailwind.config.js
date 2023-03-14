@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         appBlack: "#272932", //raisin black
         appWhite: "#e7ecef", //anti-flash white
-        appGreen: "#0f7173", //caribbean green
+        appGreen: "#4EC9AB", //caribbean green
         appRed: "#f05d5e", //bittersweet
         appOrange: "#d8a47f", //buff
       },
