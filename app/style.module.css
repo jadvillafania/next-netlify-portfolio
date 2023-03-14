@@ -1,0 +1,18 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+.name {
+    transform: translateX(-100%);
+    animation: 1s ease 0s 1 forwards slideInFromLeft;
+}
+
+.caption {
+    transform: translateX(-100%);
+    animation: 1s ease 1.3s 1 forwards slideInFromLeft;
+}
