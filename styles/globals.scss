@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #272932;
+  padding: 0;
+  margin: 0;
+  color: #e7ecef;
+}
+
+#site-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+#techstack {
+  > div {
+    // display: flex;
+    // gap: 6px;
+    // flex-wrap: wrap;
+    > span {
+      color: #fff;
+      padding: 2px;
+      border: 1px solid #0f7173;
+      background-color: #0f7173;
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      &:not(:last-child) {
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transform: translateY(-100%);
+  &.is-open {
+    animation: .3s ease 0s 1 forwards slideInFromTop;
+  }
+}
+
+.overlay {
+  background-color: rgba(0,0,0,0.6);
+  height: 120vh;
+  width: 120vw;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  z-index: 5;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#techstack {
+  overflow: hidden;
+}
+#client {
+  transform: translateY(-100%);
+  animation: .5s ease .9s 1 forwards slideInFromTop;
+}
+#backend {
+  transform: translateY(-100%);
+  animation: .5s ease .3s 1 forwards slideInFromTop;
+}
+#data {
+  transform: translateY(-100%);
+  animation: .5s ease .6s 1 forwards slideInFromTop;
+}
+#infra {
+  transform: translateY(-100%);
+  animation: .5s ease 0s 1 forwards slideInFromTop;
+}
+#services {
+  transform: translateY(-100%);
+  animation: .5s ease 1.2s 1 forwards slideInFromTop;
+}
