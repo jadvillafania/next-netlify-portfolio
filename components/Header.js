@@ -54,7 +54,7 @@ export default function Navigation() {
           </Link>
         </div>
         <div className="md:hidden ml-auto">
-          <button onClick={handleMenuClick}>
+          <button onClick={() => handleMenuClick()}>
             <FontAwesomeIcon icon={faBars} className="" />
           </button>
         </div>

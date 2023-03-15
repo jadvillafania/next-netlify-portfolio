@@ -8,6 +8,7 @@
   --app-green: #4EC9AB; //caribbean green
   --app-red: #f05d5e; //bittersweet
   --app-orange: #d8a47f; //buff
+  --app-gray: #37373D;
 }
 
 html,
@@ -58,6 +59,58 @@ body {
     transform: translateY(-100%);
   }
   100% {
+    transform: translateY(0);
+  }
+}
+
+.list-bullets {
+  li {
+    position: relative;
+    padding-left: 15px;
+    margin: 12px 0;
+  }
+  li::before {
+    content: " ";
+    width: 5px;
+    height: 5px;
+    background-color: var(--app-green);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-120%);
+    visibility: visible;
+  }
+  100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes slideToFromRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(120%);
+    visibility: hidden;
+  }
+}
+
+.tabview__body {
+  padding: 2rem;
+  position: absolute;
+  transition: transform ease;
+
+  &.active {
+    animation: .3s ease 0s 1 forwards slideInFromLeft;
+  }
+
+  &.inactive {
+    animation: .3s ease 0s 1 forwards slideToFromRight;
   }
 }
