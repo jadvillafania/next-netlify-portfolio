@@ -15,7 +15,7 @@ export default function Navigation() {
   const links = [
     { label: "about", href: "/about", external: false },
     { label: "experience", href: "/experience", external: false },
-    { label: "projects", href: "/", external: false },
+    { label: "projects", href: "/projects", external: false },
     { label: "contact", href: "/", external: false },
     {
       label: "resume",
@@ -49,7 +49,7 @@ export default function Navigation() {
                 className="hover:text-slate-400"
                 href={link.href}
                 key={link.label}
-                target={link.external && "_blank"}
+                target={link.external ? "_blank" : undefined}
               >
                 {link.label}
               </Link>
@@ -73,6 +73,7 @@ export default function Navigation() {
                   href={link.href}
                   key={link.label}
                   onClick={handleMenuClick}
+                  target={link.external ? "_blank" : undefined}
                 >
                   {link.label}
                 </Link>
