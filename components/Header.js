@@ -13,10 +13,15 @@ export default function Navigation() {
   };
 
   const links = [
-    { label: "about", href: "/about" },
-    { label: "experience", href: "/experience" },
-    { label: "work", href: "/" },
-    { label: "contact", href: "/" },
+    { label: "about", href: "/about", external: false },
+    { label: "experience", href: "/experience", external: false },
+    { label: "projects", href: "/", external: false },
+    { label: "contact", href: "/", external: false },
+    {
+      label: "resume",
+      href: "https://drive.google.com/file/d/1RICHTdPMNftDGv8E8VHdNwnycand3kRv/view?usp=sharing",
+      external: true,
+    },
   ];
 
   return (
@@ -44,14 +49,12 @@ export default function Navigation() {
                 className="hover:text-slate-400"
                 href={link.href}
                 key={link.label}
+                target={link.external && "_blank"}
               >
                 {link.label}
               </Link>
             );
           })}
-          <Link className="hover:text-slate-400" href={"/"}>
-            resume
-          </Link>
         </div>
         <div className="md:hidden ml-auto">
           <button onClick={() => handleMenuClick()}>

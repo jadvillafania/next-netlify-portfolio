@@ -5,10 +5,10 @@
 :root {
   --app-black: #272932; //raisin black
   --app-white: #e7ecef; //anti-flash white
-  --app-green: #4EC9AB; //caribbean green
+  --app-green: #4ec9ab; //caribbean green
   --app-red: #f05d5e; //bittersweet
   --app-orange: #d8a47f; //buff
-  --app-gray: #37373D;
+  --app-gray: #37373d;
 }
 
 html,
@@ -40,12 +40,12 @@ body {
   z-index: 10;
   transform: translateY(-100%);
   &.is-open {
-    animation: .3s ease 0s 1 forwards slideInFromTop;
+    animation: 0.3s ease 0s 1 forwards slideInFromTop;
   }
 }
 
 .overlay {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   height: 120vh;
   width: 120vw;
   position: absolute;
@@ -107,10 +107,10 @@ body {
   transition: transform ease;
 
   &.active {
-    animation: .3s ease 0s 1 forwards slideInFromLeft;
+    animation: 0.3s ease 0s 1 forwards slideInFromLeft;
   }
 
   &.inactive {
-    animation: .3s ease 0s 1 forwards slideToFromRight;
+    animation: 0.3s ease 0s 1 forwards slideToFromRight;
   }
 }
