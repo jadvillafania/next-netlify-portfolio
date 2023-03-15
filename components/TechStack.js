@@ -1,9 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function TechStack(props) {
   const animVariant = {
@@ -11,21 +9,12 @@ export default function TechStack(props) {
     hidden: { opacity: 0, transform: "translateY(-100%)" },
   };
 
-  const control = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    }
-  }, [control, inView]);
-
   return (
     <motion.div
-      ref={ref}
+      viewport={{ once: true }}
       variants={animVariant}
       initial="hidden"
-      animate={control}
+      whileInView={{ opacity: 1, transform: "translateY(0%)" }}
       transition={{ delay: props.delay || 1 }}
       className="box flex flex-grow flex-col p-3 border rounded border-appGreen bg-appBlack w-1/3 md:w-1/5"
     >
