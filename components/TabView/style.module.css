@@ -1,0 +1,12 @@
+.tabview {
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+.tabview__navigation {
+    width: 30%;
+    background-color: #252526;
+    display: flex;
+    flex-direction: column;
+}

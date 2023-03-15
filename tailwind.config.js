@@ -13,8 +13,11 @@ module.exports = {
         appGreen: "#4EC9AB", //caribbean green
         appRed: "#f05d5e", //bittersweet
         appOrange: "#d8a47f", //buff
+        appGray: "#37373D", //gray
+        appAsh: "#2A2D2E",
+        appDimWhite: "#CCCCCC", //dim white
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <main className="h-screen flex items-center relative overflow-hidden">
         <div className="container mx-auto">
-          <div className="w-3/5 ml-5 text-lg overflow-hidden">
+          <div className="w-4/5 md:w-3/5 ml-5 text-lg overflow-hidden">
             <h1 className={`text-5xl mb-5 ${style.name}`}>John Villafania</h1>
             <p className={`text-slate-400 ${style.caption}`}>
               I am <b className="text-appGreen">Full Stack Developer</b>{" "}
