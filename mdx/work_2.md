@@ -9,4 +9,4 @@
 <li>Conduct end-user trainings</li>
 </ul>
 
-<span class="text-sm">Techologies: <i>PHP, CodeIgniter 3, Wordpress, SVN, MySQL Database</i></span>
+<span class="text-sm">Technologies: <i>PHP, CodeIgniter 3, Wordpress, SVN, MySQL Database</i></span>

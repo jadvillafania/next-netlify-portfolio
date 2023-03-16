@@ -8,4 +8,4 @@
 <li>Directy work with clients to gather requirements and feedback</li>
 </ul>
 
-<span class="text-sm">Techologies: <i>Java, Oracle Database</i></span>
+<span class="text-sm">Technologies: <i>Java, Oracle Database</i></span>

@@ -13,4 +13,4 @@
 <li>Lead a team that through successful migration to a new system, resulting in smooth transition and improved efficiency in our operations</li>
 </ul>
 
-<span class="text-sm">Techologies: <i>PHP, Laravel, Vue, React, MySQL Database, Git, Wordpress, Oracle APEX</i></span>
+<span class="text-sm">Technologies: <i>PHP, Laravel, Vue, React, MySQL Database, Git, Wordpress, Oracle APEX</i></span>

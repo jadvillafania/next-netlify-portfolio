@@ -9,4 +9,4 @@
 <li>Provide system support for external clients</li>
 </ul>
 
-<span class="text-sm">Techologies: <i>C#, Asp.NET, MS SQL Database</i></span>
+<span class="text-sm">Technologies: <i>C#, Asp.NET, MS SQL Database</i></span>
