@@ -16,7 +16,7 @@ export default function Navigation() {
     { label: "about", href: "/about", external: false },
     { label: "experience", href: "/experience", external: false },
     { label: "projects", href: "/projects", external: false },
-    { label: "contact", href: "/", external: false },
+    // { label: "contact", href: "/", external: false },
     {
       label: "resume",
       href: "https://drive.google.com/file/d/1RICHTdPMNftDGv8E8VHdNwnycand3kRv/view?usp=sharing",
