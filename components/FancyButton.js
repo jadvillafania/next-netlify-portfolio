@@ -1,52 +1,64 @@
 "use client";
-import React from "react";
+import React, { Children } from "react";
 import { motion, useCycle } from "framer-motion";
 
 const divMotion = {
   initial: {
     width: "2.5rem",
+    transform: ["translateX(-1000%)", "translateY(-0%)"],
+    transition: {
+      delay: 1.5,
+    },
   },
   expand: {
     width: "350px",
   },
 };
 
-const labelMotion = {
+const buttonMotion = {
   initial: {
-    color: "red",
-    width: "0px",
-    x: -5,
+    color: "#94a3b8",
+    backgroundColor: "#94a3b8",
+    x: 0,
   },
   expand: {
-    color: "yellow",
-    width: "100%",
-    x: 0,
-    paddingLeft: "3.5rem",
-    paddingRight: "2.5rem",
+    color: "#1e293b",
+    backgroundColor: "#fff",
+    x: [0, 3, 0, 2, 0],
   },
 };
 
-export default function FancyButton() {
+const labelMotion = {
+  initial: {
+    color: "#94a3b8",
+  },
+  expand: {
+    color: "#fff",
+  },
+};
+
+export default function FancyButton(props) {
   const [isOpen, toggleOpen] = useCycle(false, true);
   return (
     <motion.div
       variants={divMotion}
       initial="initial"
       animate={isOpen ? "expand" : "initial"}
-      className="relative isolate cursor-pointer"
+      whileHover="expand"
+      className={`relative isolate cursor-pointer flex gap-3 items-center ${props.className}`}
     >
-      <div
+      <motion.button
         onClick={() => toggleOpen()}
-        className="rounded-full h-10 w-10 bg-white flex align-middle justify-center items-center z-10"
+        className="rounded-full p-3 bg-white flex align-middle justify-center items-center z-10"
+        variants={buttonMotion}
       >
-        <i className="bx bxl-google text-appBlack"></i>
-      </div>
+        <i className={`${props.icon} text-appBlack`}></i>
+      </motion.button>
       <motion.div
+        className="text-sm md:text-base rounded-full"
         variants={labelMotion}
-        className="ml-2 bg-red-500 overflow-hidden absolute left-0 -z-10 rounded-full"
-        style={{ top: "6px" }}
       >
-        johnarnoldvillafania@gmail.com
+        {props.children}
       </motion.div>
     </motion.div>
   );
