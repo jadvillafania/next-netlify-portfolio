@@ -1,5 +1,5 @@
+import FancyButton from "@components/FancyButton";
 import style from "./style.module.css";
-
 export const metadata = {
   description: "Portfolio landing page.",
 };
@@ -12,11 +12,12 @@ export default function Home() {
           <div className="w-4/5 md:w-3/5 ml-5 text-lg overflow-hidden">
             <h1 className={`text-5xl mb-5 ${style.name}`}>John Villafania</h1>
             <p className={`text-slate-400 ${style.caption}`}>
-              I am <b className="text-appGreen">Full Stack Developer</b>{" "}
-              passionate in bringing ideas to life using web technologies. I
-              communicate effectively with clients to comprehend their needs and
-              turn them into comprehensive system requirements.
+              I am <b className="text-appGreen">Full Stack Developer</b>.
             </p>
+            <p className={`text-slate-400 ${style.caption}`}>
+              I use web technologies to create responsive web applications.
+            </p>
+            <div className="mt-3"></div>
           </div>
         </div>
 

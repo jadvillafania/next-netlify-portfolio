@@ -28,7 +28,7 @@ export default function Navigation() {
     <>
       <nav
         id="site-header"
-        className="container flex py-4 gap-4 items-center px-4 md:px-0 bg-appBlack"
+        className="container flex py-4 gap-4 items-center px-4 md:px-0 "
       >
         <Link
           href={"/"}
