@@ -103,7 +103,6 @@ body {
 
 .tabview__body {
   padding: 2rem;
-  position: absolute;
   transition: transform ease;
 
   &.active {
@@ -112,5 +111,6 @@ body {
 
   &.inactive {
     animation: 0.3s ease 0s 1 forwards slideToFromRight;
+    position: absolute;
   }
 }

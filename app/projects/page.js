@@ -24,7 +24,7 @@ export default function page() {
     {
       id: 3,
       header: "CMI Alumni Survey",
-      body: "A survey creation tool created to replace Google Forms due to its limitations. Questions can be rendered based on answers to other questions. Used to run surveys for alumni of College of the Marshall Islands.",
+      body: "A survey creation tool created to replace Google Forms due to some limitations. It is capable of rending questions can be rendered based on answers to other questions. This is used to run surveys for alumni of College of the Marshall Islands.",
       image: "/tracer-1.JPG",
       technologies: ["Laravel", "VueJS", "MySQL"],
       url: "https://alumnitracer.cmi.edu",

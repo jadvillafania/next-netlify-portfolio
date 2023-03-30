@@ -1,8 +1,6 @@
 import TabView from "@components/TabView/TabView";
 import React from "react";
 
-import { remark } from "remark";
-import html from "remark-html";
 import matter from "gray-matter";
 
 import path from "path";
