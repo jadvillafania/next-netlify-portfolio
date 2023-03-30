@@ -23,11 +23,11 @@
   }
 }
 .out-top {
-  animation: rotate 60s linear infinite;
+  animation: rotate 45s linear infinite;
   transform-origin: 13px 25px;
 }
 .in-top {
-  animation: rotate 60s linear infinite;
+  animation: rotate 45s linear infinite;
   transform-origin: 13px 25px;
 }
 .svg {

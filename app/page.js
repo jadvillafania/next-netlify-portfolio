@@ -17,63 +17,26 @@ export default function Home() {
             <p className={`text-slate-400 ${style.caption}`}>
               I use web technologies to create responsive web applications.
             </p>
-            <div className="mt-3"></div>
+            <div className="mt-3">
+              <FancyButton icon="bx bxl-google" className="mb-3">
+                <span>johnarnoldvillafania@gmail.com</span>
+              </FancyButton>
+              <FancyButton icon="bx bxl-linkedin" className="mb-3">
+                <a
+                  href="https://www.linkedin.com/in/john-villafania/"
+                  target="_blank"
+                >
+                  <span className="whitespace-nowrap">/in/john-villafania</span>
+                </a>
+              </FancyButton>
+              <FancyButton icon="bx bxl-github" className="">
+                <a href="https://github.com/jadvillafania" target="_blank">
+                  <span className="whitespace-nowrap">jadvillafania</span>
+                </a>
+              </FancyButton>
+            </div>
           </div>
         </div>
-
-        {/* <div className=""
-          style={{
-            position: "absolute",
-            right: -1000,
-            bottom: -430,
-            background: "#0f7173",
-            height: 1000,
-            width: 1200,
-            transform: "rotate(-30deg)",
-          }}
-        ></div>
-        <div
-          style={{
-            position: "absolute",
-            right: -1080,
-            bottom: -450,
-            background: "#fff",
-            height: 1000,
-            width: 1200,
-            transform: "rotate(-30deg)",
-          }}
-        ></div> */}
-        {/* <div
-          style={{
-            position: "absolute",
-            right: -900,
-            bottom: -700,
-            background: "#0f7173",
-            height: 1000,
-            width: 1200,
-            transform: "rotate(-30deg)",
-          }}
-        ></div>
-        <div
-          style={{
-            position: "absolute",
-            right: -980,
-            bottom: -700,
-            background: "#fff",
-            height: 1000,
-            width: 1200,
-            transform: "rotate(-30deg)",
-          }}
-        ></div> */}
-        {/* <div style={{ position: "absolute", right: -50, bottom: -100 }}>
-          <Image
-            src="/site-logo.png"
-            width={500}
-            height={500}
-            role="presentation"
-            alt="site-logo-invert"
-          ></Image>
-        </div> */}
       </main>
     </>
   );
