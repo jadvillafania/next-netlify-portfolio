@@ -7,7 +7,7 @@ export default function page() {
     {
       id: 1,
       header: "Rongelap Atoll Local Government - Sensus System",
-      body: "Online sensus system for the contituents of Rongelap Atoll Local Government at Marshall Islands.",
+      body: "Online sensus system for the constituents of Rongelap Atoll Local Government at Marshall Islands.",
       image: "/ralgov-census.png",
       technologies: ["PHP", "Laravel", "VueJS", "MySQL"],
       url: "census.ralgov.com",
@@ -15,7 +15,7 @@ export default function page() {
     {
       id: 2,
       header: "Helpdesk Ticketing System",
-      body: "A web-based ticketing system used to track client requests. Develop to replace a legacy system. The system is capable of muliple user domains, multiple support groups and perform scheduled tasks.",
+      body: "A web-based ticketing system used to track client requests. Develop to replace a legacy system. The system has the capacity to handle multiple user domains, multiple support groups and perform scheduled tasks.",
       image: "/helpdesk-1.jpg",
       technologies: ["PHP", "Laravel", "VueJS", "MySQL"],
       url: "#",
