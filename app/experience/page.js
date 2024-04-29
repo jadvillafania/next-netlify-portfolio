@@ -16,6 +16,11 @@ export default async function page() {
 
   const works = [
     {
+      id: "work_5",
+      label: "Vokke",
+      body: getMarkdown("work_5"),
+    },
+    {
       id: "work_1",
       label: "College of the Marshall Islands",
       body: getMarkdown("work_1"),
