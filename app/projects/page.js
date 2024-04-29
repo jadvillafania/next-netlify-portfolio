@@ -8,7 +8,7 @@ export default function page() {
       id: 1,
       header: "Rongelap Atoll Local Government - Sensus System",
       body: "Online sensus system for the contituents of Rongelap Atoll Local Government at Marshall Islands.",
-      image: "/ralgov census.png",
+      image: "/ralgov-census.png",
       technologies: ["PHP", "Laravel", "VueJS", "MySQL"],
       url: "census.ralgov.com",
     },
