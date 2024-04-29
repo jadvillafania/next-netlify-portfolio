@@ -1,6 +1,6 @@
 <b>Web and Database Administrator @ College of the Marshall Islands</b>
 
-<span class="text-sm">April 2017 - Present</span>
+<span class="text-sm">April 2017 - Aug 2023</span>
 
 <ul class="list-bullets text-base">
 <li>Write full stack applications to aid in data collection and reporting</li>
