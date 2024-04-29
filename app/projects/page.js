@@ -6,14 +6,22 @@ export default function page() {
   const items = [
     {
       id: 1,
+      header: "Rongelap Atoll Local Government - Sensus System",
+      body: "Online sensus system for the contituents of Rongelap Atoll Local Government at Marshall Islands.",
+      image: "/ralgov census.png",
+      technologies: ["PHP", "Laravel", "VueJS", "MySQL"],
+      url: "census.ralgov.com",
+    },
+    {
+      id: 2,
       header: "Helpdesk Ticketing System",
       body: "A web-based ticketing system used to track client requests. Develop to replace a legacy system. The system is capable of muliple user domains, multiple support groups and perform scheduled tasks.",
       image: "/helpdesk-1.jpg",
       technologies: ["PHP", "Laravel", "VueJS", "MySQL"],
-      url: "https://helpdesk.cmi.edu",
+      url: "#",
     },
     {
-      id: 2,
+      id: 3,
       header: "Portfolio Website",
       body: "A personal portfolio website.",
       image: "/portfolio-1.png",
@@ -22,7 +30,7 @@ export default function page() {
       url: "https://johnvillafania.dev",
     },
     {
-      id: 3,
+      id: 4,
       header: "CMI Alumni Survey",
       body: "A survey creation tool created to replace Google Forms due to some limitations. It is capable of rending questions can be rendered based on answers to other questions. This is used to run surveys for alumni of College of the Marshall Islands.",
       image: "/tracer-1.JPG",
